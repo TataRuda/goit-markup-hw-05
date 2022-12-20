@@ -245,6 +245,11 @@ img {
   margin-right: auto;
   padding: 10px 41px 10px 41px;
 }
+.offer-button:hover,
+.offer-button:focus {
+  background-color: var(--color-1);
+  color: var(--brand-background-darkcolor);
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
