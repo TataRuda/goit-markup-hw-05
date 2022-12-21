@@ -12,6 +12,7 @@ body {
   --color-1: #ffffff;
   --color-2bg: rgba(255, 255, 255, 0.1);
   --color-modal-backdrop: rgba(0, 0, 0, 0.2);
+  --color-black: #000000;
 }
 img {
   display: block;
@@ -245,11 +246,7 @@ img {
   margin-right: auto;
   padding: 10px 41px 10px 41px;
 }
-.offer-button:hover,
-.offer-button:focus {
-  background-color: var(--color-1);
-  color: var(--brand-background-darkcolor);
-}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -605,10 +602,15 @@ img {
   border-radius: 50%;
   top: 8px;
   right: 8px;
+  fill: var(--color-black);
   background-color: var(--color-1);
-  cursor: pointer;
 }
-.close img {
+.close:hover,
+.close:focus {
+  cursor: pointer;
+  fill: var(--brand-logo-color);
+}
+.close svg {
   position: absolute;
   top: 50%;
   left: 50%;
